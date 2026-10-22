@@ -41,9 +41,13 @@ cp -r ai-ambition/skills/ambition-four-axes ~/.hermes/skills/
 
 ## Example
 
-> Me: 帮我写个脚本，每天把公众号后台的阅读数抄到 Excel 里。
+> Me: Summarize last week's customer support tickets for me.
 >
-> Skill: delivers the script as asked (rung 0), then offers at most two higher rungs, e.g. Depth: make collection idempotent, never write 0 on a failed fetch, keep the raw responses (check: rerun the same day, the row count doesn't change); Altitude: turn the sheet into a weekly topic recommendation and backtest it on history. Every rung lists what it needs, such as a login that can't be fully automated.
+> Skill: writes the summary as asked (rung 0), then offers at most two higher rungs. Depth: tag every raw ticket against a clear taxonomy instead of skimming (check: compare with a human-labeled sample of 50 tickets). Altitude: find the root causes behind the most frequent tickets and propose fixes (check: whether those ticket categories shrink next month). Every rung lists what it needs, such as export access to the helpdesk.
+
+> 我：帮我总结一下上周的客服工单。
+>
+> Skill：先按要求把总结交了（第 0 级），再给最多两级升级。深度：不靠略读，按一套清晰的分类给每张原始工单打标签（检验：和人工标注的 50 张样本对比）。高度：找出最常见工单背后的根因并提出修复方案（检验：下个月这几类工单有没有变少）。每一级都写明需要什么，比如客服系统的导出权限。
 
 ## License
 
